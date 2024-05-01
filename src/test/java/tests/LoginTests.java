@@ -16,7 +16,6 @@ public class LoginTests {
     public void before(){
         driver = Driver.getDriver();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-
         loginPage = new LoginBasePage();
     }
 
