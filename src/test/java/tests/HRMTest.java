@@ -26,7 +26,7 @@ public class HRMTest {
     public void test1(){
         SeleniumUtils.click(driver, commonPage.directory);
         SeleniumUtils.click(driver, directoryPage.jobTitleDropDown);
-//        SeleniumUtils.waitForSeconds(2);
+
         directoryPage.hrManager.click();
         SeleniumUtils.click(driver, directoryPage.submit);
         Assert.assertEquals(directoryPage.hrManagerVerify.getText(), "HR Manager");
